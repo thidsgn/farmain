@@ -1,0 +1,559 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Fri Jun 07 2024 02:10:23 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="651eb75ce761a2b4e1cbd659" data-wf-site="633c3e084f6993b18e7875c3">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" property="og:title">
+  <meta content="" property="og:description">
+  <meta content="" property="og:image">
+  <meta content="" property="twitter:title">
+  <meta content="" property="twitter:description">
+  <meta content="" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/farmaciain.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <script>
+function getParam(p) {
+var match = RegExp('[?&]' + p + '=([^&]*)').exec(window.location.search);
+return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+function getExpiryRecord(value) {
+var expiryPeriod = 90 * 24 * 60 * 60 * 1000; // 90 day expiry in milliseconds
+var expiryDate = new Date().getTime() + expiryPeriod;
+return {
+value: value,
+expiryDate: expiryDate
+};
+}
+function addGclid() {
+var gclidParam = getParam('gclid');
+var gclidFormFields = ['gclid_field', 'gclid_field_footer', 'gclid_field_contact', 'gclid_field_farma', 'gclid_field_wp', 'gclid_field_product']; // all possible gclid form field ids here
+var gclidRecord = null;
+var currGclidFormField;
+var gclsrcParam = getParam('gclsrc');
+var isGclsrcValid = !gclsrcParam || gclsrcParam.indexOf('aw') !== -1;
+gclidFormFields.forEach(function (field) {
+if (document.getElementById(field)) {
+currGclidFormField = document.getElementById(field);
+}
+});
+if (gclidParam && isGclsrcValid) {
+gclidRecord = getExpiryRecord(gclidParam);
+localStorage.setItem('gclid', JSON.stringify(gclidRecord));
+}
+var gclid = gclidRecord || JSON.parse(localStorage.getItem('gclid'));
+var isGclidValid = gclid && new Date().getTime() < gclid.expiryDate;
+if (currGclidFormField && isGclidValid) {
+currGclidFormField.value = gclid.value;
+}
+}
+window.addEventListener('load', addGclid);
+</script>
+  <!--  Google tag (gtag.js)  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-GBFV65F9CK"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GBFV65F9CK');
+</script>
+  <!-- Tooltip Styling -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@4/themes/light-border.css">
+  <!--  Meta Pixel Code  -->
+  <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '313604368004716');
+fbq('track', 'PageView');
+</script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=313604368004716&ev=PageView&noscript=1"></noscript>
+  <!--  End Meta Pixel Code  -->
+  <!--  Taboola Pixel Code  -->
+  <script type="text/javascript">
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1591813});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1591813/tfa.js',
+  'tb_tfa_script');
+</script>
+  <!--  End of Taboola Pixel Code  -->
+  <script>UPLOADCARE_PUBLIC_KEY = '0955f8e1ef1d66728497';</script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js" data-integration="Webflow"></script>
+  <!--  Hotjar Tracking Code for Farmácia In  -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3785263,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+</head>
+<body>
+  <div style="opacity:0" class="content">
+    <div class="navigation">
+      <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+        <div class="content-wrapper navigation w-container">
+          <a href="index.html" class="brand w-nav-brand"><img src="images/logo-farmacia-in-smi-444.png" sizes="(max-width: 479px) 100vw, (max-width: 767px) 33vw, (max-width: 991px) 26vw, (max-width: 1279px) 20vw, (max-width: 1439px) 17vw, 178.0625px" height="Auto" alt="" width="102" srcset="images/logo-farmacia-in-smi-444-p-500.png 500w, images/logo-farmacia-in-smi-444-p-800.png 800w, images/logo-farmacia-in-smi-444.png 989w" class="logo"></a>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <div class="nav-left">
+              <a href="https://shop.farmaciain.com.br/loja/" data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c347b9" class="navlink w-inline-block">
+                <div>Produtos</div>
+                <div class="underline-hover"></div>
+              </a>
+              <div data-hover="true" data-delay="0" data-w-id="6b5c13ca-47de-ee81-0e6e-0988af0399bf" class="category-dropdown-main w-dropdown">
+                <div class="cateogory-toogle w-dropdown-toggle">
+                  <div>Mais procurados</div>
+                </div>
+                <nav class="dropdown-list-1 w-dropdown-list">
+                  <div class="dropdown-container">
+                    <div class="flex-menu">
+                      <div class="dropdown-left">
+                        <div>
+                          <h2 class="dropdown-title">Marcas</h2>
+                          <div>
+                            <div class="w-dyn-list">
+                              <div role="list" class="w-dyn-items">
+                                <div role="listitem" class="w-dyn-item">
+                                  <a href="#" class="category-name"></a>
+                                </div>
+                              </div>
+                              <div class="empty-state w-dyn-empty">
+                                <div>No items found.</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-right">
+                        <h2 class="dropdown-title">Mais procurados</h2>
+                        <div class="w-dyn-list">
+                          <div role="list" class="flex-dropdown w-dyn-items">
+                            <div role="listitem" class="dropdown-product w-dyn-item">
+                              <a data-w-id="9bac5888-50dc-85e9-4979-223db7ec085d" href="#" class="item-dropdown w-inline-block"><img src="images/New-bg.png" loading="lazy" width="190" alt="">
+                                <div class="item-image">
+                                  <div class="preview-button">
+                                    <div>Ver produto</div>
+                                  </div>
+                                </div>
+                              </a>
+                              <div class="item-text-box">
+                                <div class="flex-price-vertical">
+                                  <div class="item-left-full">
+                                    <a href="#" class="item-name"></a>
+                                  </div>
+                                  <div class="item-price-full">
+                                    <a href="#" class="item-price"></a>
+                                    <div class="compare-at-price"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="empty-state w-dyn-empty">
+                            <div>Nenhum item encontrado.</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+              <a href="sobre-a-farmacia-in.html" data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c347bd" class="navlink w-inline-block">
+                <div>Sobre a Farmácia</div>
+                <div class="underline-hover"></div>
+              </a>
+              <a href="duvidas.html" data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c347c1" class="navlink hidden w-inline-block">
+                <div>Dúvidas</div>
+                <div class="underline-hover"></div>
+              </a>
+              <a href="blog.html" data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c347c5" class="navlink hidden w-inline-block">
+                <div>Conteúdo</div>
+                <div class="underline-hover"></div>
+              </a>
+            </div>
+          </nav>
+          <div class="nav-store">
+            <div class="nav-store-container">
+              <a data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c347d0" href="#" class="search-icon w-inline-block"></a>
+              <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart">
+                <a href="#" data-node-type="commerce-cart-open-link" aria-haspopup="dialog" aria-label="Open cart" role="button" class="w-commerce-commercecartopenlink cart-button w-inline-block">
+                  <div style="display:none" data-count-hide-rule="always" class="w-commerce-commercecartopenlinkcount cart-quantity-bg">0</div>
+                </a>
+                <div data-node-type="commerce-cart-container-wrapper" style="display:none" class="w-commerce-commercecartcontainerwrapper w-commerce-commercecartcontainerwrapper--cartType-modal">
+                  <div role="dialog" data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer">
+                    <div class="w-commerce-commercecartheader">
+                      <h4 class="w-commerce-commercecartheading">Sua sacola de compra</h4>
+                      <a href="#" data-node-type="commerce-cart-close-link" role="button" aria-label="Close cart" class="w-commerce-commercecartcloselink w-inline-block"><svg width="16px" height="16px" viewbox="0 0 16 16">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g fill-rule="nonzero" fill="#333333">
+                              <polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon>
+                            </g>
+                          </g>
+                        </svg></a>
+                    </div>
+                    <div class="w-commerce-commercecartformwrapper">
+                      <form data-node-type="commerce-cart-form" style="display:none" class="w-commerce-commercecartform">
+                        <script type="text/x-wf-template" id="wf-template-bb5e0b12-0d59-90ac-316d-05cb46c347dd"></script>
+                        <div class="w-commerce-commercecartlist" data-wf-collection="database.commerceOrder.userItems" data-wf-template-id="wf-template-bb5e0b12-0d59-90ac-316d-05cb46c347dd"></div>
+                        <div class="w-commerce-commercecartfooter">
+                          <div aria-atomic="true" aria-live="polite" class="w-commerce-commercecartlineitem">
+                            <div>Subtotal</div>
+                            <div class="w-commerce-commercecartordervalue"></div>
+                          </div>
+                          <div>
+                            <div data-node-type="commerce-cart-quick-checkout-actions">
+                              <a role="button" tabindex="0" aria-haspopup="dialog" data-node-type="commerce-cart-quick-checkout-button" style="display:none" class="w-commerce-commercecartquickcheckoutbutton"><svg class="w-commerce-commercequickcheckoutgoogleicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewbox="0 0 16 16">
+                                  <defs>
+                                    <polygon id="google-mark-a" points="0 .329 3.494 .329 3.494 7.649 0 7.649"></polygon>
+                                    <polygon id="google-mark-c" points=".894 0 13.169 0 13.169 6.443 .894 6.443"></polygon>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <path fill="#4285F4" d="M10.5967,12.0469 L10.5967,14.0649 L13.1167,14.0649 C14.6047,12.6759 15.4577,10.6209 15.4577,8.1779 C15.4577,7.6339 15.4137,7.0889 15.3257,6.5559 L7.8887,6.5559 L7.8887,9.6329 L12.1507,9.6329 C11.9767,10.6119 11.4147,11.4899 10.5967,12.0469"></path>
+                                    <path fill="#34A853" d="M7.8887,16 C10.0137,16 11.8107,15.289 13.1147,14.067 C13.1147,14.066 13.1157,14.065 13.1167,14.064 L10.5967,12.047 C10.5877,12.053 10.5807,12.061 10.5727,12.067 C9.8607,12.556 8.9507,12.833 7.8887,12.833 C5.8577,12.833 4.1387,11.457 3.4937,9.605 L0.8747,9.605 L0.8747,11.648 C2.2197,14.319 4.9287,16 7.8887,16"></path>
+                                    <g transform="translate(0 4)">
+                                      <mask id="google-mark-b" fill="#fff">
+                                        <use xlink:href="#google-mark-a"></use>
+                                      </mask>
+                                      <path fill="#FBBC04" d="M3.4639,5.5337 C3.1369,4.5477 3.1359,3.4727 3.4609,2.4757 L3.4639,2.4777 C3.4679,2.4657 3.4749,2.4547 3.4789,2.4427 L3.4939,0.3287 L0.8939,0.3287 C0.8799,0.3577 0.8599,0.3827 0.8459,0.4117 C-0.2821,2.6667 -0.2821,5.3337 0.8459,7.5887 L0.8459,7.5997 C0.8549,7.6167 0.8659,7.6317 0.8749,7.6487 L3.4939,5.6057 C3.4849,5.5807 3.4729,5.5587 3.4639,5.5337" mask="url(#google-mark-b)"></path>
+                                    </g>
+                                    <mask id="google-mark-d" fill="#fff">
+                                      <use xlink:href="#google-mark-c"></use>
+                                    </mask>
+                                    <path fill="#EA4335" d="M0.894,4.3291 L3.478,6.4431 C4.113,4.5611 5.843,3.1671 7.889,3.1671 C9.018,3.1451 10.102,3.5781 10.912,4.3671 L13.169,2.0781 C11.733,0.7231 9.85,-0.0219 7.889,0.0001 C4.941,0.0001 2.245,1.6791 0.894,4.3291" mask="url(#google-mark-d)"></path>
+                                  </g>
+                                </svg><svg class="w-commerce-commercequickcheckoutmicrosofticon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16">
+                                  <g fill="none" fill-rule="evenodd">
+                                    <polygon fill="#F05022" points="7 7 1 7 1 1 7 1"></polygon>
+                                    <polygon fill="#7DB902" points="15 7 9 7 9 1 15 1"></polygon>
+                                    <polygon fill="#00A4EE" points="7 15 1 15 1 9 7 9"></polygon>
+                                    <polygon fill="#FFB700" points="15 15 9 15 9 9 15 9"></polygon>
+                                  </g>
+                                </svg>
+                                <div>Pay with browser.</div>
+                              </a>
+                              <a role="button" tabindex="0" aria-label="Apple Pay" aria-haspopup="dialog" data-node-type="commerce-cart-apple-pay-button" style="background-image:-webkit-named-image(apple-pay-logo-white);background-size:100% 50%;background-position:50% 50%;background-repeat:no-repeat" class="w-commerce-commercecartapplepaybutton apple-pay">
+                                <div></div>
+                              </a>
+                            </div>
+                            <a href="checkout.html" value="Continuar" data-node-type="cart-checkout-button" id="Checkout" class="w-commerce-commercecartcheckoutbutton checkout-button" data-loading-text="Continuando...">Continuar</a>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="w-commerce-commercecartemptystate empty-state-flex">
+                        <div aria-live="polite" aria-label="This cart is empty">Nada encontrado por aqui...</div>
+                        <div class="top-margin _10-pixels">
+                          <a href="produtos.html" data-w-id="4958b81e-a53f-e16a-fa19-cf020907c0c1" class="button w-inline-block">
+                            <div class="button-flex">
+                              <div class="button-text">
+                                <div>Continuar comprando</div>
+                              </div>
+                              <div class="button-arrow-box">
+                                <div class="button-arrow-container">
+                                  <div class="button-arrow-left"></div>
+                                  <div class="button-arrow-right"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div aria-live="assertive" style="display:none" data-node-type="commerce-cart-error" class="w-commerce-commercecarterrorstate error-state">
+                        <div class="w-cart-error-msg" data-w-cart-quantity-error="O produto não está disponível nesta quantidade." data-w-cart-general-error="Algo deu errado ao adicionar este item ao carrinho." data-w-cart-checkout-error="O checkout está desativado neste site." data-w-cart-cart_order_min-error="O pedido mínimo não foi atendido. Adicione mais itens ao seu carrinho para continuar." data-w-cart-subscription_error-error="Antes de comprar, use seu convite por e-mail para verificar seu endereço para que possamos enviar atualizações de pedidos.">O produto não está disponível nesta quantidade.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-button w-nav-button">
+              <div class="w-icon-nav-menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search">
+        <div data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c34802" class="close-element"></div>
+        <a data-w-id="bb5e0b12-0d59-90ac-316d-05cb46c3480b" href="#" class="close-search w-inline-block"><img src="images/cerrar-1.svg" width="10" alt="" class="close-x"></a>
+        <form action="/search" class="search-box w-form"><label for="search" class="search-text">Buscar medicamento</label>
+          <div class="flex"><input class="search-input w-input" autofocus="true" maxlength="256" name="query" placeholder="Digite aqui..." type="search" id="search" required=""><input type="submit" class="search-button w-button" value="Buscar"></div>
+        </form>
+      </div>
+      <div class="preloader"><img src="images/logo-farmacia-in-smi-444.png" srcset="images/logo-farmacia-in-smi-444-p-500.png 500w, images/logo-farmacia-in-smi-444-p-800.png 800w, images/logo-farmacia-in-smi-444.png 989w" sizes="100vw" width="102" alt="" class="preloader-logo"></div>
+    </div>
+    <div id="Top" class="inner-hero-section">
+      <div class="content-wrapper w-container">
+        <div class="hero-inner-box">
+          <div class="hero-inner-padding">
+            <div class="max-540-pixels">
+              <div class="hidden">
+                <h1 style="-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-text"></h1>
+              </div>
+              <div class="hidden">
+                <p style="-webkit-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 40px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-subtitle"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#Intro" data-w-id="1c19d1b6-6f8b-0e3e-773d-fc5ec18f7ad8" style="-webkit-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="scroll-down inner-pages w-inline-block"><img src="images/Scroll-down-arrow_1Scroll-down-arrow.png" loading="lazy" alt="" width="22" class="scroll-arrow"></a>
+      <div class="hero-inner-bg">
+        <div data-w-id="3d4f0069-18c7-ec14-88c5-decafca415ca" style="-webkit-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0, 0, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="circle-cms-bg"></div>
+        <div style="-webkit-transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-category-plant"></div>
+      </div>
+    </div>
+    <div id="Intro" class="content-section inner-pages">
+      <div class="content-wrapper w-container">
+        <h2 class="h2-medium">Produtos disponíveis</h2>
+        <div class="top-margin _20-pixels w-dyn-list">
+          <div role="list" class="flex w-dyn-items">
+            <div role="listitem" class="item-grid w-dyn-item">
+              <div>
+                <a data-w-id="286f0099-b01a-7660-7392-97d656bdab8d" href="#" class="item w-inline-block"><img src="images/Item-bg.jpg" loading="lazy" width="296.5" sizes="(max-width: 479px) 83vw, (max-width: 1279px) 23vw, 296.5px" alt="" srcset="images/Item-bg-p-500.jpg 500w, images/Item-bg.jpg 593w">
+                  <div class="item-image">
+                    <div style="display:none;-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="preview-button">
+                      <div class="text-block-6">Ver produto</div>
+                    </div>
+                  </div>
+                </a>
+                <div class="item-text-box">
+                  <div class="price-flex">
+                    <div class="item-left">
+                      <a href="#" class="item-name"></a>
+                      <div>
+                        <div class="w-dyn-list">
+                          <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="w-dyn-item">
+                              <a href="#" class="category-name"></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <a href="#" class="item-price"></a>
+                      <div class="compare-at-price"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="empty-state w-dyn-empty">
+            <div>No items found.</div>
+          </div>
+          <div role="navigation" aria-label="List" class="w-pagination-wrapper pagination">
+            <a href="#" aria-label="Previous Page" class="w-pagination-previous pagination-button products"><svg class="w-pagination-previous-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 12 12" transform="translate(0, 1)">
+                <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M8 10L4 6l4-4"></path>
+              </svg>
+              <div class="w-inline-block">Previous</div>
+            </a>
+            <a href="#" aria-label="Next Page" class="w-pagination-next pagination-button products">
+              <div class="w-inline-block">Next</div><svg class="w-pagination-next-icon" height="12px" width="12px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 12 12" transform="translate(0, 1)">
+                <path fill="none" stroke="currentColor" fill-rule="evenodd" d="M4 2l4 4-4 4"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content-wrapper w-container">
+        <div class="footer-flex">
+          <div class="footer-left">
+            <a href="#" class="link-block w-inline-block"><img src="images/logo-farmacia-in-smi-444.png" loading="lazy" width="150" sizes="(max-width: 479px) 100vw, 200px" alt="" srcset="images/logo-farmacia-in-smi-444-p-500.png 500w, images/logo-farmacia-in-smi-444-p-800.png 800w, images/logo-farmacia-in-smi-444.png 989w" class="image footer-logo"></a>
+            <div class="footer-links">
+              <a href="#" class="footer-link">Home</a>
+              <a href="produtos.html" class="footer-link hidden">Comprar canabidiol</a>
+              <a href="sobre-a-farmacia-in.html" class="footer-link">Sobre a Farmácia</a>
+              <a href="duvidas.html" class="footer-link hidden">Dúvidas</a>
+              <a href="blog.html" class="footer-link hidden">Conteúdo</a>
+              <a href="contato.html" class="footer-link">Entre em contato</a>
+              <a href="https://www.farmaciain.com.br/log-in?usredir=%2Fuser-account" class="footer-link">Entrar PBM</a>
+            </div>
+            <div class="footer-links">
+              <a href="politica/privacidade.html" class="footer-link">Política de Privacidade e Termos de Uso</a>
+              <a href="resources/changelog.html" class="footer-link hidden">Como comprar</a>
+              <a href="politica/troca-ou-devolucoes.html" class="footer-link">Troca e/ou Devoluções</a>
+            </div>
+            <div class="footer-social-icons">
+              <a data-w-id="7e9952bc-6d0b-65d3-1a33-1ec8744cf14b" href="https://www.facebook.com/farmaciainbr" target="_blank" class="social-icon-rounded w-inline-block">
+                <div class="social-icons-container">
+                  <div class="social-icon-up fb"></div>
+                  <div class="social-icon-down facebook-dark"></div>
+                </div>
+              </a>
+              <a data-w-id="7e9952bc-6d0b-65d3-1a33-1ec8744cf157" href="https://www.instagram.com/farmaciainbr" target="_blank" class="social-icon-rounded instagram w-inline-block">
+                <div class="social-icons-container">
+                  <div class="social-icon-up instagram-dark"></div>
+                  <div class="social-icon-down instagram-dark"></div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="div-block-7">
+            <div class="footer-newsletter">
+              <div class="contact-mini-title">Fique por dentro das ofertas exclusivas</div>
+              <div class="top-margin">
+                <div class="footer-form w-form">
+                  <form data-name="Footer Newsletter" name="wf-form-Footer-Newsletter" method="get" id="email-form" class="footer-box" data-wf-page-id="651eb75ce761a2b4e1cbd659" data-wf-element-id="388c9c46-3380-8c0d-bfaf-fcf7ea1913ff"><input class="footer-input w-input" maxlength="256" name="Name" data-name="Name" placeholder="Digite seu nome" type="text" id="field" required=""><input class="footer-input w-input" maxlength="256" name="Email" data-name="Email" placeholder="Seu e-mail" type="email" id="field" required=""><input type="submit" data-wait="Aguarde..." class="footer-submit-button w-button" value="Ficar por dentro"></form>
+                  <div class="success-message w-form-done"><img src="images/marca-de-verificacion-1_1marca-de-verificacion-1.png" loading="lazy" alt="" width="35">
+                    <div class="top-margin-2 _20-pixels">
+                      <div>Thank you! Your submission has been received!</div>
+                    </div>
+                  </div>
+                  <div class="error-message-2 on-footer w-form-fail">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="notice">
+          <div class="w-row">
+            <div class="w-col w-col-4">
+              <div class="text-block-2">Copyright © Farmácia In Comércio LTDA<br>CNPJ: 40.007.034/0001-22<br>Rua Mario Lobo, 61 - Sala 1208<br>CEP: 89.201-330 - Centro <br>Joinville / SC</div>
+              <div class="text-block-2">Responsável Técnico(a) Paula Beneciutti<br>Conselho 18109 CRFS C</div>
+            </div>
+            <div class="w-col w-col-5">
+              <div class="text-block-2">A Farmácia In segue as determinações da Anvisa</div><img src="images/logo_anvisa.webp" loading="lazy" width="130" sizes="(max-width: 479px) 100vw, 130px" alt="" srcset="images/logo_anvisa-p-500.webp 500w, images/logo_anvisa.webp 500w">
+            </div>
+            <div class="column w-col w-col-3"><img src="images/pagamentos.png" loading="lazy" alt=""></div>
+          </div>
+        </div>
+        <div class="notice">
+          <div class="w-row">
+            <div class="column-2 w-col w-col-9">
+              <div class="text-block-2">As Informações Contidas Neste Site, Como Promoções E Ofertas De Remédios E Medicamentos, Não Devem Ser Usadas Para Automedicação E Não Substituem, Em Hipótese Alguma, A Medicação Prescrita Pelo Profissional Da Área Médica. Somente O Médico Está Em Condições De Diagnosticar Qualquer Problema De Saúde E Prescrever O Tratamento Adequado. Os Preços E As Promoções São Válidos Apenas Para Compras Via Internet. | As Fotos Contidas Em Nosso Site São Meramente Ilustrativas. | *Preços E Disponibilidade Sujeitos A Alterações No Decorrer Do Dia. Antibióticos E Antimicrobianos Vendas Apenas Em Lojas Físicas Ou Televendas, Atendimento De Segunda À Sábado Das 09 Às 18h00, Exceto Feriados. Portaria Nº 344 - 01/02/1999 - Ministério Da Saúde.</div>
+            </div>
+            <div class="w-col w-col-3">
+              <div class="text-block-2">A Farmácia In segue as determinações da Anvisa</div><img src="images/logo_anvisa.webp" loading="lazy" width="130" sizes="(max-width: 479px) 100vw, 130px" alt="" srcset="images/logo_anvisa-p-500.webp 500w, images/logo_anvisa.webp 500w">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#Top" data-w-id="1c19d1b6-6f8b-0e3e-773d-fc5ec18f7ae1" style="opacity:0;display:none" class="go-up-button w-inline-block"></a>
+  </div>
+  <div class="whatsapp-animation">
+    <div data-w-id="ddd8c088-cfcb-ddc1-5b32-e46f2f8aee1b" class="proactive-whatsapp"></div>
+    <div data-w-id="ddd8c088-cfcb-ddc1-5b32-e46f2f8aee1c" class="proactive-message-whatsapp">
+      <div>Olá, como podemos ajudar?</div>
+      <div class="text-block-30">RESPONDER</div>
+    </div>
+  </div>
+  <div class="modal-wrapper-2">
+    <div class="whatsapp-modal-2">
+      <div class="header-modal"><img src="images/whatsapp-icon.png" loading="lazy" alt="">
+        <h4 class="header-modal-title-2">Preencha seu e-mail e tire suas dúvidas no Whatsapp</h4>
+      </div>
+      <div class="content-modal">
+        <p class="paragraph-23">Tire suas dúvidas no nosso canal do Whatsapp.</p>
+        <div class="w-form">
+          <form id="wf-form-Whatsapp" name="wf-form-Whatsapp" data-name="Whatsapp" redirect="https://farmaciain.com.br/whatsapp?ref=home" data-redirect="https://farmaciain.com.br/whatsapp?ref=home" method="get" class="form-wrapper" data-wf-page-id="651eb75ce761a2b4e1cbd659" data-wf-element-id="d472f081-07b9-d1fa-8793-a6861c6c5f55">
+            <div class="form-card">
+              <div><label for="email" class="field-label-5">E-mail</label><input class="text-field-5 w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Digite seu e-mail" type="email" id="email-2" required=""><label for="Phone" class="field-label-5">Telefone com DDD</label><input class="text-field-5 w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="Seu telefone com DDD" type="tel" id="Phone" required=""></div>
+            </div>
+            <div class="w-embed"><input type="hidden" id="gclid_field_wp" name="gclid_field_wp" value=""></div><input type="submit" data-wait="Um minutinho..." class="button-modal-2 w-button" value="FALAR NO WHATSAPP">
+          </form>
+          <div class="w-form-done">
+            <div>Obrigado por entrar em contato com a Farmácia In. Estamos te redirecionando para o Whatsapp. </div>
+          </div>
+          <div class="w-form-fail">
+            <div>Oops! Something went wrong while submitting the form.</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-modal">
+        <a data-w-id="d472f081-07b9-d1fa-8793-a6861c6c5f67" href="#" class="button-modal-2 close w-button">FECHAR</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=633c3e084f6993b18e7875c3" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!-- Tooltip Scripts & Settings -->
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@4"></script>
+  <script>
+tippy('.tooltip', {        
+ animation: 'fade',    
+ duration: 200,      
+ arrow: true,          
+ delay: [0, 50],      
+ arrowType: 'sharp',  
+ theme: 'light-border',        
+ maxWidth: 220,    
+ interactive: true,
+})
+</script>
+  <script>
+//aqui
+    document.addEventListener("DOMContentLoaded", function () {
+      params = {
+          'utm_source': null,
+          'utm_medium': null,
+          'utm_campaign': null,
+          'utm_term': null,
+          'utm_content': null,
+          'gclid': null,
+          'fbclid': null,
+      }
+      var queryString = new URLSearchParams(window.location.search);
+      for(var param in params) {
+          value = queryString.get(param);
+          params[param] = value;
+      }
+      for(var i = 0, l=document.links.length; i<l; i++) {
+          var tag = document.links[i];
+          var url = tag.href;
+          if(url.includes('/product')) {
+              url = new URL(url);
+              for(param in params) {
+                  value = params[param]
+                  if(value !== null) {
+                      url.searchParams.append(param, value)
+                  }
+              }
+              url = url.toString();
+              tag.href = url;
+          } else {
+          	url = new URL(url);
+              for(param in params) {
+                  value = params[param]
+                  if(value !== null) {
+                      url.searchParams.append(param, value)
+                  }
+              }
+              url = url.toString();
+              tag.href = url;
+          }
+      }
+  });
+</script>
+</body>
+</html>
