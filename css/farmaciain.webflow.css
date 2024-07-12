@@ -2179,6 +2179,7 @@ blockquote {
 
 .item {
   width: 100%;
+  height:350px;
   position: relative;
   overflow: hidden;
 }
